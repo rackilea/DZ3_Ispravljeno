@@ -1,0 +1,24 @@
+@model IEnumerable<zad2.Models.TodoItem>
+
+@{ViewData["Title"] = "Completed Todos";}
+
+<h1 class="text-center">
+    @ViewData["Title"]
+</h1>
+@if (Model != null)
+{
+
+    <ul class="text-center list-group">
+        @foreach (var item in Model)
+        {
+            <li class="list-group-item">
+                <p class="list-group-item-heading">
+                    <strong>@item.Text</strong>
+                </p>
+                <p class="list-group-item-info">
+                    <em>Completed: @item.DateCompleted</em>
+                </p>
+            </li>
+        }
+    </ul>
+}

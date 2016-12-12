@@ -1,0 +1,15 @@
+@model zad2.Models.AddTodoViewModel
+
+@{
+    ViewData["Title"] = "Add todo";
+}
+
+<h2 class="text-center">
+    @ViewData["Title"]
+</h2>
+
+<form asp-controller="Todo" asp-action="Add" method="post" class="text-center">
+    <textarea class="form-control center-block" style="min-width: 70%; resize: none" rows="4" asp-for="Text"></textarea>
+    <strong><span class="text-danger" asp-validation-for="Text"></span></strong><br />
+    <input type="submit" class="btn btn-primary btn-lg" value="Submit" />
+</form>

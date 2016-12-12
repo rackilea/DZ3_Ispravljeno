@@ -1,0 +1,23 @@
+@model IEnumerable<zad2.Models.TodoItem>
+
+@{ViewData["Title"] = "Active Todos";}
+<h1 class="text-center">
+    @ViewData["Title"]
+</h1>
+
+<h2>Active Todo</h2>
+<p>
+    <a asp-action="Add">Add new todo</a>
+    |
+    <a asp-action="Completed">See completed todos</a>
+</p>
+@if (Model != null)
+{
+    foreach (var item in Model)
+    {
+        <p><b>@item.Text</b></p>
+        <p>@item.DateCreated</p>
+        <a asp-controller="Todo" asp-action="MarkCompleted" asp-route-id="@item.Id">Mark as completed</a>
+        <hr />
+    }
+}

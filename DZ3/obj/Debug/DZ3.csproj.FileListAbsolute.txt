@@ -1,0 +1,10 @@
+C:\Users\rackilea\Desktop\C#\Faks\DZ3\DZ3\bin\Debug\DZ3.dll.config
+C:\Users\rackilea\Desktop\C#\Faks\DZ3\DZ3\bin\Debug\DZ3.dll
+C:\Users\rackilea\Desktop\C#\Faks\DZ3\DZ3\bin\Debug\DZ3.pdb
+C:\Users\rackilea\Desktop\C#\Faks\DZ3\DZ3\bin\Debug\EntityFramework.dll
+C:\Users\rackilea\Desktop\C#\Faks\DZ3\DZ3\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rackilea\Desktop\C#\Faks\DZ3\DZ3\bin\Debug\EntityFramework.xml
+C:\Users\rackilea\Desktop\C#\Faks\DZ3\DZ3\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rackilea\Desktop\C#\Faks\DZ3\DZ3\obj\Debug\DZ3.csprojResolveAssemblyReference.cache
+C:\Users\rackilea\Desktop\C#\Faks\DZ3\DZ3\obj\Debug\DZ3.dll
+C:\Users\rackilea\Desktop\C#\Faks\DZ3\DZ3\obj\Debug\DZ3.pdb
