@@ -60,9 +60,6 @@
   "frameworks": {
     "net452": {
       "dependencies": {
-        "DZ3": {
-          "target": "project"
-        }
       }
     }
   },

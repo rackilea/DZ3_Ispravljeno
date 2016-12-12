@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using DZ3.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using zad2.Models;
+using zad2.Interfaces;
 
 namespace zad2.Controllers
-{
+{ 
     public class TodoController : Controller
     {
         private readonly ITodoRepository _repository;
@@ -39,7 +39,7 @@ namespace zad2.Controllers
             if (ModelState.IsValid)
             {
                 Guid userId = await Task.Run(LoggedInUser);
-                var item = new DZ3.Classes.TodoItem(model.Text, userId);
+                var item = new zad2.Models.TodoItem(model.Text, userId);
                 _repository.Add(item);
                 return RedirectToAction("Index");
             }
