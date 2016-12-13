@@ -43,7 +43,7 @@ namespace zad2.Controllers
                 _repository.Add(item);
                 return RedirectToAction("Index");
             }
-            return View(model);
+            return View("Add", model);
         }
 
         public async Task<IActionResult> Completed()
@@ -58,6 +58,11 @@ namespace zad2.Controllers
             Guid userId = await Task.Run(LoggedInUser);
             var markedTodos = _repository.MarkAsCompleted(id,userId);
             return RedirectToAction("Index");
+        }
+
+        public IActionResult Add()
+        {
+            return View();
         }
     }
 }

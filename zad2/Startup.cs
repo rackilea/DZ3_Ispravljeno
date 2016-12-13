@@ -12,9 +12,9 @@ using Microsoft.Extensions.Logging;
 using zad2.Data;
 using zad2.Models;
 using zad2.Services;
-using DZ3.Classes;
-using DZ3.Repositories;
-using DZ3.Interfaces;
+using zad2.Repositories;
+using zad2.Interfaces;
+using zad2.Context;
 
 namespace zad2
 {
